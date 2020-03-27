@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='icon' href="https://i.pinimg.com/originals/7d/ee/75/7dee75df86032818866238325d66c1cc.png">
+    <title>Richard's Favorite Things</title>
+    <link rel = "stylesheet" href="website.css">
+    <style>
+    body {
+      background-image: linear-gradient(#13191c, #0b0c0d);
+      background-attachment: fixed;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 100px;
+      background: mediumspringgreen;
+    }
+    ::-webkit-scrollbar-track {
+      background-image: linear-gradient(#13191c, #0b0c0d);
+      border-radius: 0px;
+    }
+
+    .title {
+      margin: auto;
+      margin-top: 2%;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 2em;
+      color: white;
+      text-shadow: 0px 0px 10px black;
+      letter-spacing: 5px;
+      word-spacing: 7px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: mediumspringgreen;
+      border-radius: 5px;
+      text-align: center;
+      padding: 20px;
+      width: 60%;
+    }
+
+    .foodtitle {
+      width: 35%;
+      position: relative;
+      left: 28.96%;
+      margin-top: 3%;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: steelblue;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+      border-left: solid 2px mediumspringgreen;
+      border-bottom: solid 2px mediumspringgreen;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .goodfood {
+      width: 40%;
+      position: relative;
+      left: 28.96%;
+      margin-top: -0.7%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      color: white;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: left;
+      padding-left: 15px;
+      list-style: none;
+      padding-left: 15px;
+      border-left: solid 2px mediumspringgreen;
+      border-top: solid 2px mediumspringgreen;
+      line-height: 25px;
+      word-spacing: 10px;
+      text-align: left;
+      padding-right: 20px;
+      padding-bottom: 7px;
+      padding-top: 7px;
+    }
+
+
+    .acttitle {
+      width: 35%;
+      position: relative;
+      left: 28.96%;
+      margin-top: 4%;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: steelblue;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+      border-left: solid 2px mediumspringgreen;
+      border-bottom: solid 2px mediumspringgreen;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .goodact {
+      width: 40%;
+      position: relative;
+      left: 28.96%;
+      margin-top: -0.7%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      color: white;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: left;
+      padding-left: 15px;
+      list-style: none;
+      padding-left: 15px;
+      border-left: solid 2px mediumspringgreen;
+      border-top: solid 2px mediumspringgreen;
+      line-height: 25px;
+      word-spacing: 10px;
+      text-align: left;
+      padding-right: 20px;
+      padding-bottom: 7px;
+      padding-top: 7px;
+    }
+
+
+    .colortitle {
+      width: 35%;
+      position: relative;
+      left: 28.96%;
+      margin-top: 4%;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: steelblue;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+      border-left: solid 2px mediumspringgreen;
+      border-bottom: solid 2px mediumspringgreen;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .goodcolor {
+      width: 40%;
+      position: relative;
+      left: 28.96%;
+      margin-top: -0.7%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      color: white;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: left;
+      padding-left: 15px;
+      list-style: none;
+      padding-left: 15px;
+      border-left: solid 2px mediumspringgreen;
+      border-top: solid 2px mediumspringgreen;
+      line-height: 25px;
+      word-spacing: 10px;
+      text-align: left;
+      padding-right: 20px;
+      padding-bottom: 7px;
+      padding-top: 7px;
+    }
+
+    .animaltitle {
+      width: 35%;
+      position: relative;
+      left: 28.96%;
+      margin-top: 4%;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: steelblue;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+      border-left: solid 2px mediumspringgreen;
+      border-bottom: solid 2px mediumspringgreen;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .goodanimal {
+      width: 40%;
+      position: relative;
+      left: 28.96%;
+      margin-top: -0.7%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      color: white;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: left;
+      padding-left: 15px;
+      list-style: none;
+      padding-left: 15px;
+      border-left: solid 2px mediumspringgreen;
+      border-top: solid 2px mediumspringgreen;
+      line-height: 25px;
+      word-spacing: 10px;
+      text-align: left;
+      padding-right: 20px;
+      padding-bottom: 7px;
+      padding-top: 7px;
+    }
+
+    .subtitle {
+      width: 35%;
+      position: relative;
+      left: 28.96%;
+      margin-top: 4%;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: steelblue;
+      font-size: 1.5em;
+      letter-spacing: 5px;
+      border-left: solid 2px mediumspringgreen;
+      border-bottom: solid 2px mediumspringgreen;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .goodsub {
+      width: 40%;
+      position: relative;
+      left: 28.96%;
+      margin-top: -0.7%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      color: white;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: left;
+      padding-left: 15px;
+      list-style: none;
+      padding-left: 15px;
+      border-left: solid 2px mediumspringgreen;
+      border-top: solid 2px mediumspringgreen;
+      line-height: 25px;
+      word-spacing: 10px;
+      text-align: left;
+      padding-right: 20px;
+      padding-bottom: 7px;
+      padding-top: 7px;
+    }
+
+    .splitbox {
+      width: 50%;
+      height: 10px;
+      position: absolute;
+      margin-top: 3%;
+      left: 25%;
+      border-bottom: solid 2px white;
+      border-left: solid 2px white;
+      border-right: solid 2px white;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    #showLs {
+      width: 42%;
+      height: 6%;
+      position: absolute;
+      margin-top: 6%;
+      margin-bottom: 10px;
+      left: 28.96%;
+      font-family: sans-serif;
+      font-size: 1em;
+      color: white;
+      background: none;
+      border: none;
+      border-bottom: solid 2px mediumspringgreen;
+      outline: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+      color: #8affce;
+      cursor: pointer;
+      transition: transform 0.2s
+    }
+    #showLs:hover {
+      color: white;
+      transform: rotateY(20deg)
+    }
+
+    #showG {
+      width: 42%;
+      height: 6%;
+      position: absolute;
+      margin-top: 10%;
+      margin-bottom: 200px;
+      left: 28.96%;
+      font-family: sans-serif;
+      font-size: 1em;
+      color: white;
+      background: none;
+      border: none;
+      border-bottom: solid 2px mediumspringgreen;
+      outline: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+      color: #8affce;
+      cursor: pointer;
+      transition: transform 0.2s
+    }
+    #showG:hover {
+      color: white;
+      transform: rotateY(20deg)
+    }
+
+    #showB {
+      width: 42%;
+      height: 6%;
+      position: absolute;
+      margin-top: 14%;
+      margin-bottom: 200px;
+      left: 28.96%;
+      font-family: sans-serif;
+      font-size: 1em;
+      color: white;
+      background: none;
+      border: none;
+      border-bottom: solid 2px mediumspringgreen;
+      outline: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      word-spacing: 2px;
+      color: #8affce;
+      cursor: pointer;
+      transition: transform 0.2s
+    }
+    #showB:hover {
+      color: white;
+      transform: rotateY(20deg)
+    }
+
+    .splitbox2 {
+      width: 50%;
+      height: 10px;
+      position: absolute;
+      margin-top: 20%;
+      left: 25%;
+      border-bottom: solid 2px white;
+      border-left: solid 2px white;
+      border-right: solid 2px white;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    .noliketitle {
+      position: absolute;
+      margin-top: 23%;
+      margin-bottom: 300px;
+      text-transform: uppercase;
+      border: solid 2px MediumSpringGreen;
+      color: steelblue;
+      font-size: 1.3em;
+      font-family: sans-serif;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      letter-spacing: 2px;
+      left: 29%;
+      border-radius: 5px;
+    }
+
+    #t1 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 28%;
+      left: 29%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    #t2 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 28%;
+      left: 45%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #t3 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 28%;
+      left: 61%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #t4 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 32%;
+      left: 29%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #t5 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 32%;
+      left: 45%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #t6 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 32%;
+      left: 61%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .infobox {
+      position: absolute;
+      margin-top: 40%;
+      left: 10%;
+      width: 80%;
+      height: 10%;
+      background: #0a0e0f;
+      text-align: center;
+      border-top: 2px solid mediumspringgreen;
+      border-right: 2px solid mediumspringgreen;
+      border-left: 2px solid mediumspringgreen;
+      padding-top: 60px;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: white;
+      letter-spacing: 2px;
+      font-family: sans-serif;
+      word-spacing: 2px;
+
+    }
+
+    .infoboxmore {
+      position: absolute;
+      margin-top: 42%;
+      left: 10%;
+      width: 80%;
+      height: 10%;
+      text-align: center;
+      padding-top: 60px;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #8affce;
+      letter-spacing: 2px;
+      font-family: sans-serif;
+      word-spacing: 2px;
+    }
+
+    </style>
+  </head>
+<body>
+
+  <p class='title'>Richard's Favorite things</p>
+
+
+  <div>
+    <p class='foodtitle'>Foods</p>
+    <div class='goodfood'>
+      Potatoes
+      Beef
+      Clams
+      Fish
+      Pork
+      Squash
+      Rice
+      Chicken
+    </div>
+  </div>
+
+  <div>
+    <p class='acttitle'>Activities</p>
+    <div class='goodact'>
+      Coding
+      Eating
+      Gaming
+      sleeping
+      Studying
+    </div>
+  </div>
+
+  <div>
+    <p class='colortitle'>Color</p>
+    <div class='goodcolor'>
+      MediumSpringGreen
+      SteelBlue
+      Red
+    </div>
+  </div>
+
+  <div>
+    <p class='animaltitle'>Animals</p>
+    <div class='goodanimal'>
+      Turtle
+      Octopus
+      Bird
+      Fish
+      Rabbit
+      Bear
+    </div>
+  </div>
+
+  <div>
+    <p class='subtitle'>Subjects</p>
+    <div class='goodsub'>
+      Mathematics
+      Writing
+      Vocabulary
+    </div>
+  </div>
+
+<p class='splitbox'></p>
+
+<button id="showLs" onclick="javascript:showLanguages()"> Known Coding Languages </button>
+<button id="showG" onclick="javascript:showGames()"> Favorite Games </button>
+<button id="showB" onclick="javascript:showBooks()"> Best Books </button>
+
+<p class='splitbox2'></p>
+
+<p class = "noliketitle">What I do not like</p>
+<table class='noliketable'>
+  <tr>
+    <td id='t1'>Java Coding</td>
+    <td id='t2'>Sparkling Water</td>
+    <td id='t3'>O.O. programming</td>
+  </tr>
+  <tr>
+    <td id='t4'>School food</td>
+    <td id='t5'>Sweating</td>
+    <td id='t6'>Basketball shoes</td>
+  </tr>
+</table>
+
+<p class='infobox'>Composed by Richard L.</p>
+<p class='infoboxmore'>Please do not grow in offense if an opinion is in disparity.</p>
+
+  <script>
+    function showLanguages() {
+      document.getElementById("showLs").innerHTML = "Python HTML CSS Javascript C# Java ProcessingJS";
+      document.getElementById("showLs").style.color = "white";
+      document.getElementById("showLs").style.textTransform = "capitalize";
+      document.getElementById("showLs").style.wordSpacing = "10px";
+      document.getElementById("showLs").style.letterSpacing = "2px";
+    }
+    function showGames() {
+      document.getElementById("showG").innerHTML = "MCOC CODMobile WarFace GeometryDash";
+      document.getElementById("showG").style.color = "white";
+      document.getElementById("showG").style.textTransform = "capitalize";
+      document.getElementById("showG").style.wordSpacing = "10px";
+      document.getElementById("showG").style.letterSpacing = "2px";
+    }
+    function showBooks() {
+      document.getElementById("showB").innerHTML = " Projekt1065-AlanGratz TheInvisibleMan-H.G.Wells";
+      document.getElementById("showB").style.color = "white";
+      document.getElementById("showB").style.textTransform = "capitalize";
+      document.getElementById("showB").style.wordSpacing = "10px";
+      document.getElementById("showB").style.letterSpacing = "2px";
+    }
+  </script>
+
+</body>
+</html>
