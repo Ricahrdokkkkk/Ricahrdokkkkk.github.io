@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel='icon' href="https://i.pinimg.com/originals/7d/ee/75/7dee75df86032818866238325d66c1cc.png">
     <title>Richard's Favorite Things</title>
-    <link rel = "stylesheet" href="website.css">
     <style>
     body {
       background-image: linear-gradient(#13191c, #0b0c0d);
@@ -464,10 +463,53 @@
       padding-top: 5px;
       padding-bottom: 5px;
     }
+    #t7 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 36%;
+      left: 29%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
 
+    #t8 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 36%;
+      left: 45%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #t9 {
+      color: white;
+      border-left: solid 2px mediumspringgreen;
+      position: absolute;
+      margin-top: 36%;
+      left: 61%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
     .infobox {
       position: absolute;
-      margin-top: 40%;
+      margin-top: 41.5%;
       left: 10%;
       width: 80%;
       height: 10%;
@@ -488,7 +530,7 @@
 
     .infoboxmore {
       position: absolute;
-      margin-top: 42%;
+      margin-top: 43.5%;
       left: 10%;
       width: 80%;
       height: 10%;
@@ -566,13 +608,13 @@
 
 <p class='splitbox'></p>
 
-<button id="showLs" onclick="javascript:showLanguages()"> Known Coding Languages </button>
-<button id="showG" onclick="javascript:showGames()"> Favorite Games </button>
-<button id="showB" onclick="javascript:showBooks()"> Best Books </button>
+<button id="showLs" onclick="javascript:showLanguages()">Known Coding Languages</button>
+<button id="showG" onclick="javascript:showGames()">Favorite Games</button>
+<button id="showB" onclick="javascript:showBooks()">Best Books</button>
 
 <p class='splitbox2'></p>
 
-<p class = "noliketitle">What I do not like</p>
+<p class = "noliketitle">Things I don't like</p>
 <table class='noliketable'>
   <tr>
     <td id='t1'>Java Coding</td>
@@ -584,6 +626,11 @@
     <td id='t5'>Sweating</td>
     <td id='t6'>Basketball shoes</td>
   </tr>
+  <tr>
+    <td id='t7'>Gym Class</td>
+    <td id='t8'>Teal</td>
+    <td id='t9'>Twist Pens</td>
+  </tr>
 </table>
 
 <p class='infobox'>Composed by Richard L.</p>
@@ -591,21 +638,24 @@
 
   <script>
     function showLanguages() {
-      document.getElementById("showLs").innerHTML = "Python HTML CSS Javascript C# Java ProcessingJS";
+      document.getElementById("showLs").innerHTML = "Python HTML CSS Javascript\
+        C# Java ProcessingJS";
       document.getElementById("showLs").style.color = "white";
       document.getElementById("showLs").style.textTransform = "capitalize";
       document.getElementById("showLs").style.wordSpacing = "10px";
       document.getElementById("showLs").style.letterSpacing = "2px";
     }
     function showGames() {
-      document.getElementById("showG").innerHTML = "MCOC CODMobile WarFace GeometryDash";
+      document.getElementById("showG").innerHTML = "MCOC CODMobile WarFace\
+       GeometryDash";
       document.getElementById("showG").style.color = "white";
       document.getElementById("showG").style.textTransform = "capitalize";
       document.getElementById("showG").style.wordSpacing = "10px";
       document.getElementById("showG").style.letterSpacing = "2px";
     }
     function showBooks() {
-      document.getElementById("showB").innerHTML = " Projekt1065-AlanGratz TheInvisibleMan-H.G.Wells";
+      document.getElementById("showB").innerHTML = " Projekt1065-AlanGratz \
+      TheInvisibleMan-H.G.Wells";
       document.getElementById("showB").style.color = "white";
       document.getElementById("showB").style.textTransform = "capitalize";
       document.getElementById("showB").style.wordSpacing = "10px";
