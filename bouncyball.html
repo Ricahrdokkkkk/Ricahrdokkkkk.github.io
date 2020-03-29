@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation</title>
+    <link rel = "stylesheet" href="animate.css">
+    <style>
+    body {
+      background-image: linear-gradient(#13191c, #0b0c0d);
+      background-attachment: fixed;
+    }
+
+    #button {
+      height: 30px;
+      width: 30px;
+      border-radius: 100px;
+      outline: none;
+      border: 2px solid mediumspringgreen;
+      background: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      cursor: pointer;
+    }
+
+    #button:hover {
+      border: 2px solid white;
+    }
+
+    #button:focus {
+      animation: test 2.5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes test {
+      0% {top: 50%; width: 50px; left: 49.5%;}
+      15% {top: 40%; width: 30px; left: 50%;}
+      25% {top: 50%; width: 50px; left: 49.5%;}
+      40% {top: 40%; width: 30px; left: 50%;}
+      50% {top: 50%; width: 50px; left: 49.5%;}
+      65% {top: 40%; width: 30px; left: 50%;}
+      75% {top: 50%; width: 50px; left: 49.5%;}
+      90% {top: 40%; width: 30px; left: 50%;}
+      100% {top: 50%; width: 50px; left: 49.5%;}
+    }
+    </style>
+  </head>
+<body>
+  <button id="button"></button>
+
+</body>
+</html>
