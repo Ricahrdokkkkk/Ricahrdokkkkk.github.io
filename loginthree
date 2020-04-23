@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+    <style>
+    body {
+      background: url(https://picsum.photos/2500/1500?image=1041);
+      background-attachment: fixed;
+      object-fit: cover;
+    }
+    #box {
+      background: #1a1d21;
+      text-align: center;
+      width: 350px;
+      height: 25em;
+      position: relative;
+      left: 40%;
+      border-radius: 5px;
+      margin-top: 12%;
+      border: 2px solid dodgerblue;
+      opacity: 0.8;
+    }
+    #title {
+      color: white;
+      text-transform: capitalize;
+      padding-top: 20px;
+      font-family: sans-serif;
+      font-size: 30px;
+      text-shadow: 0px 0px 10px black;
+      letter-spacing: 2px;
+    }
+    #textarea {
+      margin-top: 10px;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid dodgerblue;
+      background: none;
+      font-family: sans-serif;
+      width: 200px;
+      color: white;
+      font-size: 14px;
+      padding-bottom: 3px;
+    }
+    #textarea1 {
+      margin-top: 20px;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid dodgerblue;
+      background: none;
+      font-family: sans-serif;
+      width: 200px;
+      color: white;
+      font-size: 14px;
+      padding-bottom: 3px;
+    }
+    #textarea:focus {
+      border-bottom: 2px solid white;
+    }
+    #textarea1:focus {
+      border-bottom: 2px solid white;
+    }
+    #sinin {
+      margin-top: 40px;
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      border: 2px solid dodgerblue;
+      cursor: pointer;
+      background: none;
+      color: white;
+      font-family: sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      outline: none;
+    }
+    #sinin:hover {
+      background: black;
+    }
+    #sinin:active {
+      border: 2px solid white;
+    }
+    ::placeholder {
+      color: white;
+      opacity: 0.8;
+      letter-spacing: 1px;
+    }
+    </style>
+  </head>
+<body>
+  <div id = 'box'>
+    <p id = 'title'>Login</p>
+    <input type='text' id='textarea' placeholder='Username'><br>
+    <input type='password' id='textarea1' placeholder='Password'><br>
+    <button id = 'sinin'>Sign In</button>
+  </div>
+</body>
+</html>
