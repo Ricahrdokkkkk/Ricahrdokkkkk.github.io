@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Addition Calculator</title>
+    <style>
+
+      body {
+        background: #090c0d;
+      }
+
+      #calc {
+        background: none;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 500px;
+        padding-top: 0px;
+        border-radius: 10000px;
+        border: 2px solid crimson;
+        box-shadow: 0px 0px 20px black;
+      }
+      #title {
+        color: white;
+        font-family: "Google Sans", sans-serif;
+        font-size: 35px;
+        padding-top: 90px;
+      }
+
+      #int1 {
+        background: none;
+        outline: none;
+        color: white;
+        border: none;
+        border-bottom: 2px solid;
+        border-image-source: linear-gradient(to right, dodgerblue, crimson);
+        border-image-slice: 60 30;
+        padding-bottom: 5px;
+        width: 250px;
+        font-size: 15px;
+      }
+      #int1:focus {
+        border: none;
+        border-bottom: 2px solid white;
+      }
+
+      #int2 {
+        background: none;
+        margin-top: 15px;
+        outline: none;
+        color: white;
+        border: none;
+        border-bottom: 2px solid;
+        border-image-source: linear-gradient(to right, dodgerblue, crimson);
+        border-image-slice: 60 30;
+        padding-bottom: 5px;
+        width: 250px;
+        font-size: 15px;
+      }
+      #int2:focus {
+        border: none;
+        border-bottom: 2px solid white;
+      }
+      #answer {
+        margin-top: 10%;
+        font-size: 25px;
+        border: 2px solid dodgerblue;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 300px;
+        margin-left: 90px;
+        cursor: default;
+      }
+
+    </style>
+  </head>
+
+<body>
+
+<div id='calc'>
+  <p id='title'>Addition Calculator</p>
+  <input type='number' id='int1' placeholder='Number One'></input><br>
+  <input type='number' id='int2' placeholder='Number Two'></input><br>
+  <p id='answer'></p>
+</div>
+
+<script>
+  var num1 = document.getElementById('int1');
+  var num2 = document.getElementById('int2');
+  function add() {
+    return Number(num1.value) + Number(num2.value)
+  }
+  function update() {
+    document.getElementById('answer').innerHTML = add();
+  }
+  setInterval(update, 100);
+</script>
+</body>
+</html>
