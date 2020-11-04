@@ -10,7 +10,7 @@
       }
       svg { 
             display: inline-block; position: absolute; 
-            top: 0; left: 0; z-index: -1;
+            top: 0; left: 0; z-index: -1; width: 120%;
         } 
       .container { 
             display: inline-block; position: absolute; 
@@ -62,11 +62,14 @@
       }
       
       @media screen and (max-width: 1100px) {
+        .container {
+          width: 115%;
+        }
         #title {
           font-size: 300px;
         }
         .profilecard {
-          height: 2400px; display: block; width: 110%; left: 0%;
+          height: 2400px; display: block; width: 115%; left: 0%;
         }
         #dadphoto {
           width: 1000px; height: 1000px; margin-top: 100px;
@@ -76,10 +79,10 @@
         }
         #row1 {
           display: block; margin-left: auto; margin-right: auto; text-align: center;
-          width: 110%; left: 0%;
+          width: 109%; left: 0%;
         }
         #img1 {
-          width: 110%; margin-left: auto; margin-right: auto; height: 600px; margin-top: 30px;
+          width: 109%; margin-left: auto; margin-right: auto; height: 600px; margin-top: 30px;
           border: 20px solid rgb(137, 174, 255); left: 0%;
         }
         #finaltitle {
