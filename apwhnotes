@@ -43,7 +43,7 @@
     <p id="spacer">.</p>
 <script>
     var msgabcd = localStorage.getItem('msgabcd') || document.getElementById('inputstuff').value;
-    document.getElementById('inputstuff').value = msgabc;
+    document.getElementById('inputstuff').value = msgabcd;
     setInterval(() => { 
         localStorage.setItem("msgabcd", document.getElementById("inputstuff").value);
     }, 1000);
