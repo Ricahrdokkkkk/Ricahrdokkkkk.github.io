@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="http://www.clker.com/cliparts/V/K/h/8/c/A/number-7-md.png">
+    <title>Unit 7</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Average&display=swap');
+        body {
+            background: #26272b;
+        }
+        #inputstuff {
+            width: 45%; margin-left: auto; position: absolute;
+            left: 50%; -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); outline: none;
+            top: 50px; border: none; box-shadow: 0px 0px 25px black;
+            padding-left: 60px; padding-top: 100px; font-family: "Average";
+            font-size: 15px; padding-bottom: 100px; bottom: 75px;
+            padding-right: 100px; background: white; height: 10000vh;
+            resize: none; line-height: 25px;
+        }
+        #spacer {
+            bottom: -5000vh; background: #26272b; width: 100%; left: 0;
+            position: absolute; color: #26272b;
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 100px;
+            background: white;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 100px;
+        }
+
+    </style>
+  </head>
+<body>
+
+    <textarea id="inputstuff" contenteditable></textarea>
+    <p id="spacer">.</p>
+<script>
+    var msgabcdef = localStorage.getItem('msgabcdef') || document.getElementById('inputstuff').value;
+    document.getElementById('inputstuff').value = msgabcdef;
+    setInterval(() => { 
+        localStorage.setItem("msgabcdef", document.getElementById("inputstuff").value);
+    }, 1000);
+</script>
+</body>
+</html>
