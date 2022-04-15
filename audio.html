@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ghost Of You</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        body, html {
+            height: 100%;
+            padding: 0; 
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        #bckimage {
+            background-image: url("https://upload.wikimedia.org/wikipedia/en/e/ea/5_Seconds_of_Summer_Youngblood.png");
+            background-repeat: none;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+            filter: blur(60px);
+            height: 110%;
+            width: 110%;
+            position: absolute;
+            left: 0;
+            z-index: -1000;
+        }
+        #main {
+            background: transparent;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #cover {
+            width: 450px;
+            height: 450px;
+            transition: 0.3s;
+        }
+        #cover:hover {
+            transform: scale(1.05);
+        }
+
+        #play {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            outline: none;
+            border: none;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+            margin-top: 30px;
+            transition: 0.2s;
+            font-family: 'Source Sans Pro';
+            font-size: 17px;
+            color: rgb(255, 88, 88);
+            text-align: center;
+        }
+
+        #play:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+    </style>
+  </head>
+<body>
+    <div id="bckimage"></div>
+    <div id="main">
+        <image src="https://upload.wikimedia.org/wikipedia/en/e/ea/5_Seconds_of_Summer_Youngblood.png" id="cover"></image>
+        <br><button id="play" onclick="playaudio()" controls>▶</button>
+    </div>
+ 
+</body>
+<script>
+    var audio = new Audio('5sos.mp3');
+    var count = 1;
+    var loop = audio.loop;
+    audio.volume = 0.1;
+    function playaudio() {
+        count += 1;
+        if (count % 2 == 1) {
+            audio.pause();
+            document.getElementById("play").innerHTML = "▶";
+        }
+        else {
+            audio.play();
+            document.getElementById("play").innerHTML = "| |";
+            document.getElementById("play").style = "font-weight: bold";
+        } 
+    }
+</script>
+</html>
