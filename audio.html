@@ -54,7 +54,7 @@
             outline: none;
             border: none;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-            margin-top: 30px;
+            margin-top: 0px;
             transition: 0.2s;
             font-family: 'Source Sans Pro';
             font-size: 17px;
@@ -66,6 +66,40 @@
             transform: scale(1.1);
             cursor: pointer;
         }
+        #title {
+            margin-top: 40px;
+            color: white;
+            font-family: "Source Sans Pro";
+            font-size: 25px;
+        }
+        #author {
+            color: white;
+            font-family: "Source Sans Pro";
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            #main {
+                width: 110vw;
+            }
+            #cover {
+                width: 800px;
+                height: 800px;
+            }
+            #play {
+                margin-top: 50px;
+                width: 170px;
+                height: 170px;
+                font-size: 70px;
+            }
+            #title {
+                margin-top: 100px;
+                font-size: 55px;
+            }
+            #author {
+                font-size: 40px;
+            }
+        }
 
     </style>
   </head>
@@ -73,6 +107,8 @@
     <div id="bckimage"></div>
     <div id="main">
         <image src="https://upload.wikimedia.org/wikipedia/en/e/ea/5_Seconds_of_Summer_Youngblood.png" id="cover"></image>
+        <p id="title">Ghost Of You</p>
+        <p id="author">5 Seconds Of Summer</p>
         <br><button id="play" onclick="playaudio()" controls>▶</button>
     </div>
  
